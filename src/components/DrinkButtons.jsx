@@ -3,7 +3,7 @@ import { Button } from "./UI/Button";
 
 export const DrinkButtons = ({ drinkOne, drinkTwo }) => {
   return (
-    <>
+    <div>
       <h2>
         Would you like {drinkOne} or {drinkTwo}?
       </h2>
@@ -11,6 +11,6 @@ export const DrinkButtons = ({ drinkOne, drinkTwo }) => {
         <Button text={drinkOne} />
         <Button text={drinkTwo} />
       </div>
-    </>
+    </div>
   );
 };
