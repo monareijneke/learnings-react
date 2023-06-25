@@ -1,5 +1,11 @@
 import "./DrinkButtons.css";
+import PropTypes from "prop-types";
 import { Button } from "./UI/Button";
+
+DrinkButtons.propTypes = {
+  drinkOne: PropTypes.string.isRequired,
+  drinkTwo: PropTypes.string.isRequired,
+};
 
 export const DrinkButtons = ({ drinkOne, drinkTwo }) => {
   return (
