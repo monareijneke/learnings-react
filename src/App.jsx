@@ -11,7 +11,7 @@ export const App = () => {
     <div className="app">
       <h2>{greeting}</h2>
       <DrinkButtons drinkOne={tea.name} drinkTwo={coffee.name} />
-      <DrinkChoice drink={userDrink} />
+      <DrinkChoice drink={userDrink} src={tea.imgUrl} />
     </div>
   );
 };

@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 import "./DrinkChoice.css";
 
-export const DrinkChoice = ({ drink }) => {
+export const DrinkChoice = ({ drink, src }) => {
   return (
     <>
-      <p>{drink.name}</p>
-      <img src={drink.imgUrl} alt={drink.alt} />
+      <h2>Your choice = {drink}</h2>
+      <img src={src} alt={drink} />
       <p>Your drink will be ready in a few minutes!</p>
     </>
   );
@@ -13,4 +13,5 @@ export const DrinkChoice = ({ drink }) => {
 
 DrinkChoice.propTypes = {
   drink: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired,
 };
