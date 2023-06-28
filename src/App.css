@@ -6,3 +6,11 @@
   align-items: center;
   justify-content: center;
 }
+
+.bigHeader {
+  font-size: 15px;
+}
+
+.smallHeader {
+  font-size: 50px;
+}
