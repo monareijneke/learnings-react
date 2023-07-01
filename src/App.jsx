@@ -8,7 +8,7 @@ import { DrinkChoice } from "./components/DrinkChoice";
 export const App = () => {
   const greeting = "Welcome!";
   const question = "Please select a drink!";
-  const [userDrink, setUserDrink] = useState(tea);
+  const [userDrink, setUserDrink] = useState();
 
   return (
     <div className="app">
