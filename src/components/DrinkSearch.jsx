@@ -2,11 +2,10 @@ import { TextInput } from "./UI/TextInput";
 import { useState } from "react";
 
 export const DrinkSearch = () => {
-  const [searchField, setSearchField] = useState("test drink");
+  const [searchField, setSearchField] = useState("komt er nog wat van?");
 
   return (
     <>
-      <label>Search for your drink:</label>
       <TextInput />
       <p>{searchField}</p>
     </>
