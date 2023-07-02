@@ -1,8 +1,14 @@
+import { DrinkList } from "./DrinkList";
 import { TextInput } from "./UI/TextInput";
+import { availableDrinks } from "../utils/data";
 import { useState } from "react";
 
 export const DrinkSearch = () => {
-  const [searchField, setSearchField] = useState("komt er nog wat van?");
-
-  return <>{searchField ? <p>{searchField}</p> : <TextInput />};</>;
+  const [searchField, setSearchField] = useState("test drink");
+  return (
+    <>
+      <TextInput />
+      <DrinkList drink={availableDrinks} />
+    </>
+  );
 };
