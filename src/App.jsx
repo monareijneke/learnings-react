@@ -1,9 +1,7 @@
 import "./App.css";
 import { useState } from "react";
-import { availableDrinks } from "./utils/data";
 import { DrinkSearch } from "./components/DrinkSearch";
 import { DrinkChoice } from "./components/DrinkChoice";
-import { DrinkItem } from "./components/DrinkItem";
 
 export const App = () => {
   const greeting = "Welcome!";
@@ -12,13 +10,12 @@ export const App = () => {
 
   return (
     <div className="app">
-      <h1>{greeting}</h1>
       {userDrink ? (
-        <DrinkChoice drink={userDrink.name} src={userDrink.imgUrl} />
+        <DrinkChoice drink={userDrink} />
       ) : (
         <>
-          <DrinkSearch />
-          <DrinkItem drink={availableDrinks} />
+          <h1>{greeting}</h1>
+          <DrinkSearch clickFn={setUserDrink} />
         </>
       )}
     </div>

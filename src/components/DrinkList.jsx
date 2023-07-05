@@ -1,12 +1,11 @@
 import { DrinkItem } from "./DrinkItem";
 
-export const DrinkList = drink => {
-  console.log(drink);
+export const DrinkList = (drinks, clickFn) => {
   return (
     <>
-      {drink.drink.map(drink => {
-        return <DrinkItem key={drink.id} drink={drink} />;
-      })}
+      {drinks.drinks.map(drink => (
+        <DrinkItem drink={drink} clickFn={clickFn} key={drink.id} />
+      ))}
     </>
   );
 };
