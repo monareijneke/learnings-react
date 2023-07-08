@@ -6,7 +6,7 @@ import { DrinkChoice } from "./components/DrinkChoice";
 export const App = () => {
   const greeting = "Welcome!";
 
-  const [userDrink, setUserDrink] = useState();
+  const [userDrink, setUserDrink] = useState("");
 
   return (
     <div className="app">

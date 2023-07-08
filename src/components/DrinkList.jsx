@@ -1,6 +1,7 @@
 import { DrinkItem } from "./DrinkItem";
 
 export const DrinkList = (drinks, clickFn) => {
+  console.log(drinks);
   return (
     <>
       {drinks.drinks.map(drink => (

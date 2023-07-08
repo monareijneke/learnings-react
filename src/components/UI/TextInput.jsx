@@ -1,9 +1,10 @@
 import "./TextInput.css";
 
-export const TextInput = () => {
+// eslint-disable-next-line react/prop-types
+export const TextInput = ({ changeFn }) => {
   return (
     <form>
-      <input className="text-input" id="drinksearch" type="text"></input>
+      <input className="text-input" type="text" onChange={changeFn}></input>
     </form>
   );
 };
